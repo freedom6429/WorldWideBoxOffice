@@ -77,8 +77,8 @@ class ViewController: UIViewController {
     
     func showMovie(year: String){
         if let movieInfo = movieInfos[year]{
-            if let posterfileName = movieInfo["poster"]{
-                moviePosterImageView.image = UIImage(named: posterfileName)
+            if let posterFileName = movieInfo["poster"]{
+                moviePosterImageView.image = UIImage(named: posterFileName)
             }
             if let chineseTitle = movieInfo["chineseTitle"]{
                 chineseTitleLabel.text = chineseTitle
